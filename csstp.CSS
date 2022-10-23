@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
+
+/*Configuracion general*/
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -31,6 +33,9 @@ aside{
 .footer{
 	grid-area: footer;
 }
+/*Fin configuracion general*/
+
+/*Encabezado con barra de navegación*/
 .header {
 	background-color: rgb(53,58,64);
 	display: flex;
@@ -55,7 +60,7 @@ aside{
 	z-index: 3;
 }
 .header .logo{
-	cursor: pointer;;
+	cursor: pointer;
 }
 .header .logo img:hover{
 	transform: scale(1.2);
@@ -90,7 +95,9 @@ aside{
 #link-verde:hover{
 	color: lightgreen;
 }
+/*Fin encabezado y barra de navegación*/
 
+/*Imagen banner aside*/
 aside .ba1 {
 	background-image: url(IMGTP/ba1.jpg);
 	background-size: cover;
@@ -150,11 +157,11 @@ aside #boton2 {
 }
 
 aside #boton1 {
-	display: inline-flex;
+	display: flex;
 	font-size: medium;
 	background-color:rgba(0,0,0, 0.1);
 	position: absolute;
-	z-index: 2;
+	
 	text-align: right;
 	top: 70%;
 	left: 70%;
@@ -279,6 +286,7 @@ aside #boton1 {
  }
 
  .formulario{
+	
 	margin-top: 5vh;
 	position: relative;
 	text-align: center;
@@ -297,28 +305,24 @@ aside #boton1 {
 
  .contenedor-f{
 	display: flex;
+	padding-bottom: 1rem;
 	justify-content: center;
 	align-items: center;
 	text-align: start;
 	flex-direction: row;	
  }
 
- .item1{
-	padding: 1em;
-	margin: 1%;
- }
- .item2{
-	padding: 1em;
-	margin: 1%; 
- }
+
+
 
  #name1{
-	width: 30vh;
+	width: 33.4vh;
 	height: 6vh;
+	margin-right: 1rem;
  }
  
  #name2{
-	width: 30vh;
+	width: 33.4vh;
 	height: 6vh;
  }
 .contenedor-g{
@@ -333,6 +337,7 @@ aside #boton1 {
 	height: 120vh;
 	resize: none;
 }
+
 .green{
 	background-color: rgb(150,201,62);
 	color: white;
@@ -341,8 +346,10 @@ aside #boton1 {
 	width: 70vh;
 	height: 5vh;
 	margin-bottom: 3vh;
+	border: solid;
 }
 
+ 
 .label{
 	display: flex;
 	text-align: start;
@@ -351,7 +358,7 @@ aside #boton1 {
 
 
 
-
+/*Pie de pagina*/
 
 .footer{
 		background-color: rgb(28,61,78);
@@ -388,4 +395,192 @@ aside #boton1 {
 .footer .links-foot a:hover{
 	color: white;
 }
+/*Fin pie de pagina*/
 
+/*comienzo de cuadros- pagina de comprar tickets*/
+.cuadros{
+	margin-top: 1.5em;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.Cazul{
+	text-align: center;
+	height: 30vh;
+	width: 33vh;
+	border: solid;
+	border-width: 1px;
+	border-color: slateblue;
+	margin-right: .5vh;
+	transition: all 500ms ease;
+}
+
+.Camarillo{
+	text-align: center;
+	height: 30vh;
+	width: 33vh;
+	border: solid;
+	border-width: 1px;
+	border-color: rgb(189, 189, 39);
+	transition: all 500ms ease;
+}
+.Camarillo h3{
+	padding-top: 2em ;
+}
+.Camarillo p {
+	margin: 1em;
+}
+.Cazul h3{
+	padding-top: 2em;
+}
+.Cazul p{
+	margin: 1em;
+}
+.resalta{
+	font-weight: bolder;
+}
+.timida{
+	font-size: small;
+	color: rgb(158, 155, 155)
+}
+
+.Camarillo:hover{
+	transform: scale(1.05);
+}
+.Cazul:hover{
+	transform: scale(1.05);
+}
+/*Fin de cuadros- compra tickets*/
+
+/*Div de venta de tickets*/
+.ventaTicket{
+	text-align: center;
+	position: relative;
+	flex-direction: column;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+.ventaTicket h2{
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: small;	
+}
+
+.ventaTicket p{
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: 200%;
+}
+/*Fin de div venta de tickets*/
+
+/*Formularios de comprar ticket*/
+.contenedor-x{
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+
+#CorreoTicket{
+	width: 100vh;
+	height: 6vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+#NombreTicket{
+	width: 49.5vh;
+	height: 6vh;
+	margin-right: 1vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+
+#ApellidoTicket{
+	width: 49.5vh;
+	height: 6vh;
+	margin-left: vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+.botonesTicket{
+	width: 49.5vh;
+	height: 6vh;
+	background-color: rgb(150,201,62);
+	color: white;
+	border: solid;
+	border-color: rgb(150,201,62);
+	border-radius: 5px;
+	margin-top: 1vh;
+	margin-bottom: 3vh;
+	
+}
+
+#botonBorrar{
+	margin-right: 1vh;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+.contenedor-form{
+	position: relative;
+	align-items: center;
+	justify-content: start;
+	display:grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+}
+
+.contenedor-form label{
+	text-align: start;
+	font-size: 1.1rem;
+}
+
+.d1{
+	width: 49vh;
+	
+ }
+
+ .d2{
+	width: 49vh;
+	
+ }
+ 
+.opcionesTicket{
+	width: 49.5vh;
+	height: 6vh;
+ }
+ #cantidadTicket{
+	width: 49.5vh;
+	height: 6vh;
+	margin-right: 1vh;
+ }
+ 
+.totalTicket{
+	width: 100vh;
+	height: 6vh;
+	border-radius: 5px;
+	background-color: rgb(169, 212, 212);
+	display: none;
+}
+
+.totalTicket h3{
+	text-align: start;
+	color: rgb(66, 66, 218);
+	font-size: small;
+	margin-left: 1vh;
+	padding-top: 1vh;
+
+}
+/*Fin formularios de ticket*/

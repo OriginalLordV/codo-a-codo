@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trabajo Práctico</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="..\Trabajo-practico\csstp.css">
+    <script type="text/javascript" src="..\trabajo-practico\trabajo_practico.js"></script>
+  </head>
+  <header class="header">
+    <div class="logo">
+      <a href="Trabajo_practico.html"><img src="..\Trabajo-practico\IMGTP\codoacodo.png" alt="logo de codo a codo"></a>
+    </div>
+    <h2>Conf Bs As</h2>
+      <nav>
+
+        <ul class="links-nav">
+          <li><a href="a">La conferencia</a></li>
+          <li><a href="a">Los oradores</a></li>
+          <li><a href="a">El lugar y la fecha</a></li>
+          <li><a href="a">Conviértete en orador</a></li>
+          <li><a href="comprar_ticket.html" id="link-verde">Comprar tickets</a></li>
+        </ul>
+      </nav>
+             
+  </header>
+
+  <body>
+    <div class="contenedor-x">
+    <div class="cuadros">
+      <div class="Cazul"><h3>Estudiante</h3><p>Tienen un descuento</p><p class="resalta">80%</p><p class="timida">*Presentar documentación</p></div>
+      <div class="Cazul"><h3>Trainee</h3><p>Tienen un descuento</p><p class="resalta">50%</p><p class="timida">*Presentar documentación</p></div>
+      <div class="Camarillo"><h3>Junior</h3><p>Tienen un descuento</p><p class="resalta">15%</p><p class="timida">*Presentar documentación</p></div>
+    </div>
+
+    <div class="ventaTicket">
+      <h2>Venta</h2>
+      <p>Valor de ticket: 200$</p>
+    </div>
+
+    <div class="contenedor-f">
+        <div><input id="NombreTicket" type="text" placeholder="Nombre"></div>
+        <div><input id="ApellidoTicket" type="text" placeholder="Apellido"></div>
+    </div>  
+    <div class="contenedor-g">
+        <div class="item4">
+          <input id="CorreoTicket" type="email" placeholder="Correo" pattern=".+@gmail\.com"required></input>
+        </div>
+
+        <div class="contenedor-form">
+          <div class="d1"><label for="cantidadTicket">Cantidad</label></div>
+          <div class="d2"><label>Categoria</label></div>
+          <div class="d3"><form>
+            <input id="cantidadTicket" type="text" placeholder="Cantidad">
+          </form>
+        </div>
+        <div class="d4"><form>
+          <select id="descuentoTicket" class="opcionesTicket">
+            <option value="Estudiante">Estudiante</option>
+            <option value="Trainee">Trainee</option>
+            <option value="Junior">Junior</option>
+            <option value="None">Ninguno</option>
+          </select>
+        </form></div>
+        </div>
+        <div id="totalTicket" class="totalTicket"><h3 id="totalPago">Total a pagar:$</h3></div>
+        
+    <div class="contenedor-f">
+        <div class="item3" id="botonBorrar"><button class="botonesTicket" >Borrar</button></div>
+        <div class="item3" id="botonResumen"><button class="botonesTicket" onclick="mostrarTicket()" onclick="capturaDeDato()">Resumen</button></div>
+    </div>
+    </div>
+  </div>
+  </body>
+
+  <footer class="footer">
+    <nav>
+      <ul class="links-foot">
+        <li><a href="a">Preguntas frecuentes</a></li>
+        <li><a href="a">Contáctenos</a></li>
+        <li><a href="a">Prensa</a></li>
+        <li><a href="a">Conferencias</a></li>
+        <li><a href="a">Términos y condiciones</a></li>
+        <li><a href="a">Privacidad</a></li>
+        <li><a href="a">Estudiantes</a></li>
+      </ul>
+    </nav>
+  </footer>
+  </html>
